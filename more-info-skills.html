@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delta2-1 | Portfolio</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <meta name="description" content="Explore Clyne Jester Aquino's skills and hobbies in development, design, and personal interests." />
+  <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+
+  <canvas id="matrixParticles"></canvas>
+  <!-- =========================
+       NAVIGATION
+  ==========================-->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Clyne Jester Aquino</span>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="skills.html" class="active">Skills & Hobbies</a>
+        <a href="more-info-achievement.html">Achievements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================
+         SKILLS & HOBBIES
+    ==========================-->
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="title">Skills & Hobbies</h2>
+          </div>
+        </div>
+<div class="subtitle">What I can do and what do I do.</div>
+        <!-- Right panel (hidden by default) -->
+<aside id="infoPanel" class="info-panel">
+  <button id="closePanel">&times;</button>
+  <div id="panelContent"></div>
+</aside>
+
+    <h3>SKILLS</h3>
+        <div class="cards">
+      
+          <!-- Skills -->
+          <article class="card">
+            <h3>Frontend Development</h3>
+            <p>Developed multiple web applications and refined skills over time.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span><span class="tag">CSS</span>
+              <span class="tag">JavaScript</span><span class="tag">UI/UX</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <article class="card">
+            <h3>Backend Development</h3>
+            <p>Learning backend systems with PHP and database integration.</p>
+            <div class="tag-row">
+              <span class="tag">PHP</span><span class="tag">Node</span>
+              <span class="tag">MySQL</span><span class="tag">REST</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <article class="card">
+            <h3>UI/UX</h3>
+            <p>Designing interfaces with joyful, modern, and minimal styles.</p>
+            <div class="tag-row">
+              <span class="tag">Wireframing</span><span class="tag">Prototyping</span>
+              <span class="tag">Design Systems</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+      <!-- new-->
+          <article class="card">
+            <h3>Game Development</h3>
+            <p>Developing games that I am Dreaming of creating.</p>
+            <div class="tag-row">
+              <span class="tag">Unity</span><span class="tag">Game Environment</span>
+              <span class="tag">Blender</span><span class="tag">Singleplayer</span>
+              <span class="tag">Multiplayer</span><span class="tag">FPS</span><span class="tag">TPS</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <article class="card">
+            <h3>3D Animation</h3>
+            <p>Animating 3D objects for Game Assets or Animation.</p>
+            <div class="tag-row">
+              <span class="tag">Animation</span><span class="tag">Assets</span>
+              <span class="tag">Blender</span><span class="tag">3D</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <article class="card">
+            <h3>3D Modeling</h3>
+            <p>Modeling 3D Objects for Game assets or animations.</p>
+            <div class="tag-row">
+              <span class="tag">Modeling Environment</span>
+              <span class="tag">Blender</span><span class="tag">3D Rendering</span>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <article class="card">
+            <h3>Digital Arts</h3>
+            <p>Creating Arts for commision in digital devices, E-novel Covers and Manga.</p>
+            <div class="tag-row">
+              <span class="tag">Sketchbook</span><span class="tag">Autodesk</span>
+              <span class="tag">Blender</span><span class="tag">Digital Canvas</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          </div>
+
+ <h3>HOBBIES</h3>
+          <div class="cards2">
+           
+          <!-- Hobbies -->
+          <article class="card">
+            <h3>Historical Books</h3>
+            <p>Enjoy reading about timelines, concepts, and historical ideas.</p>
+            <div class="tag-row">
+              <span class="tag">Action</span><span class="tag">History</span><span class="tag">Mystery</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <article class="card">
+            <h3>Gaming</h3>
+            <p>Passionate about FPS and strategy games like Arena Breakout.</p>
+            <div class="tag-row">
+              <span class="tag">FPS</span><span class="tag">Strategy</span><span class="tag">Indie</span>
+              <span class="tag">Combat Master</span><span class="tag">Arena Breakout</span><span class="tag">RPG</span>
+            </div>
+            <a  class="info-btn">Click for more info</a>
+          </article>
+
+          <article class="card">
+            <h3>Fitness</h3>
+            <p>Dedicated to building a healthy lifestyle through workouts.</p>
+            <div class="tag-row">
+              <span class="tag">Gym</span><span class="tag">Calisthenics</span><span class="tag">Weight Lifting</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <!-- Outdoor and adventure -->
+          <article class="card">
+            <h3>Outdoor Adventure</h3>
+            <p>Exploring Places I havent Seen in personal.</p>
+            <div class="tag-row">
+              <span class="tag">Puerto Galera</span><span class="tag">Beaches</span><span class="tag">Hiking</span>
+              <span class="tag">Tamarao Falls</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <!-- Roadtrips -->
+          <article class="card">
+            <h3>Roadtrips</h3>
+            <p>Hitting the road that Brings me somewhere different.</p>
+            <div class="tag-row">
+              <span class="tag">Motorcycle</span><span class="tag">Highway</span><span class="tag">outdoor</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <!-- Arts and Crafts -->
+
+          <article class="card">
+            <h3>Arts</h3>
+            <p>Creating things from unlimited Imaginations.</p>
+            <div class="tag-row">
+              <span class="tag">Canvas</span><span class="tag">Acrylic</span><span class="tag">Paint</span>
+              <span class="tag">artpiece</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+          <!-- Guns -->
+           <article class="card">
+            <h3>Guns</h3>
+            <p>Adrenaline Rush.</p>
+            <div class="tag-row">
+              <span class="tag">Military</span><span class="tag">Weapons</span><span class="tag">airsoft</span>
+              <span class="tag">Tactical</span><span class="tag">CQB</span><span class="tag">Milsim</span>
+            </div>
+            <a class="info-btn">Click for more info</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="skills.js"></script>
+  <!-- Image Viewer Overlay -->
+<div class="image-viewer" id="imageViewer">
+  <img src="" alt="Full view" id="fullImage">
+</div>
+
+
+</body>
+</html>

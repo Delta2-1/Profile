@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Delta2-1 | Portfolio</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+  <meta name="description" content="Simple, professional portfolio template with Home, Skills & Hobbies, Achievements, and Contact sections." />
+  <link rel="stylesheet" href="achievement.css">
+</head>
+<body>
+
+  <canvas id="matrixParticles"></canvas>
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="brand-badge" aria-hidden="true"></span>
+        <span>Clyne Jester Aquino</span>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="more-info-skills.html">Skills & Hobbies</a>
+        <a href="achievement.html" class="active">Achievements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="pill">Milestones</div>
+            <h2 class="title">Achievements</h2>
+          </div>
+          <div class="subtitle">A timeline of progress and projects.</div>
+        </div>
+
+        <div class="timeline">
+          <!-- Use .milestone elements; JS will attach interactive panel behavior -->
+          <div class="milestone" data-key="shs-high-honors">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="ms-card">
+              <div class="ms-title">Senior High School High Honors</div>
+              <div class="ms-meta">2023 · Occidental Mindoro National High School</div>
+              <p>As a student with compassion in learning I have achieved High Honors award.</p>
+            </div>
+          </div>
+
+          <div class="milestone" data-key="mod-developer">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="ms-card">
+              <div class="ms-title">Most Valued Mod Developer</div>
+              <div class="ms-meta">2024 · Carnage Wars audio Mod system.</div>
+              <p>Learned mod development and credited to the creator of Carnage Wars FPS game on mobile.</p>
+            </div>
+          </div>
+
+          <div class="milestone" data-key="redzone-development">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="ms-card">
+              <div class="ms-title">Development of Redzone Low Poly Extraction</div>
+              <div class="ms-meta">2024 · Personal Project</div>
+              <p>Early prototype development of a low-poly extraction game (Redzone).</p>
+            </div>
+          </div>
+
+          <div class="milestone" data-key="harvestlane-prototype">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="ms-card">
+              <div class="ms-title">Developed Prototype "HarvestLane Mamburao"</div>
+              <div class="ms-meta">2024 · Prototype Project</div>
+              <p>Built a small prototype to learn level design and game loops.</p>
+            </div>
+          </div>
+
+          <div class="milestone" data-key="topdown-shooter">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="ms-card">
+              <div class="ms-title">Developed a Simple Top-down Shooter (PC)</div>
+              <div class="ms-meta">2024 · Personal Project</div>
+              <p>Created a small top-down shooter demo. <a href="tds shooter.html">Click here to play the sample game</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Info panel (slide-in) -->
+  <aside id="infoPanel" class="info-panel" aria-hidden="true">
+    <button id="closePanel" aria-label="Close panel">&times;</button>
+    <div id="panelContent" class="panel-content"></div>
+  </aside>
+
+  <!-- Fullscreen Image Viewer Overlay -->
+  <div class="image-viewer" id="imageViewer" aria-hidden="true">
+    <img src="" alt="Full view" id="fullImage">
+  </div>
+
+  <script src="achievement.js"></script>
+</body>
+</html>

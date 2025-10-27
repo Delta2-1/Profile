@@ -72,4 +72,14 @@ const canvas = document.getElementById("matrixParticles");
   window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
+  });
+
+//new update pdf download function
+
+ document.getElementById("downloadBtn").addEventListener("click", () => {
+    const link = document.createElement("a");
+    link.href = "Clyne_Jester_Aquino_Resume.pdf";
+    link.download = "Clyne_Jester_Aquino_Resume.pdf";
+    link.click();
   });
